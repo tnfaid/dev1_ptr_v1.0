@@ -1,0 +1,15 @@
+{
+  "name": "dev1_Ptr_v1",
+  "app_id": "612e615a",
+  "type": "ionic1",
+  "integrations": {
+    "gulp": {},
+    "cordova": {}
+  },
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}
