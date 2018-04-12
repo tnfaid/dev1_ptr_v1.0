@@ -9,7 +9,7 @@ angular.module('app.routes', [])
   $stateProvider
     
 
-  .state('petroMobile', {
+      .state('petroMobile', {
     url: '/page1',
     templateUrl: 'templates/petroMobile.html',
     controller: 'petroMobileCtrl'
