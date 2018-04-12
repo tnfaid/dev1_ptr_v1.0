@@ -2,7 +2,7 @@
 this is view of petro's website mobile version, 
 
 ## Getting started
-using ionic platform v1, so you can download/clone. after finishing clone/downloading procces, type
+menggunakan ionic versi1, untuk run program. Silahkan download terlebih dahulu, atau clone dari github akun ini. kemudian buka cmd dan ketik
 
 ```
 ionic serve -l
