@@ -1,8 +1,10 @@
 # Web Petro mobile version
-this is view of petro's website mobile version, 
+jadi ini project kami untuk membuat website petro versi mobile dengan menggunakan ionic versi1
 
 ## Getting started
-menggunakan ionic versi1, untuk run program. Silahkan download terlebih dahulu, atau clone dari github akun ini. kemudian buka cmd dan ketik
+
+donwload file.zip/ clone dari akun github ini, kemudian buka cmd dan ketikan
+
 
 ```
 ionic serve -l
