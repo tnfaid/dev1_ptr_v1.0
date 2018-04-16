@@ -9,17 +9,12 @@ angular.module('app.routes', [])
   $stateProvider
     
 
-<<<<<<< HEAD
   .state('petroMobile', {
-=======
-      .state('petroMobile', {
->>>>>>> 68b11f637427122f738b2b5cb2223691f394aa38
     url: '/page1',
     templateUrl: 'templates/petroMobile.html',
     controller: 'petroMobileCtrl'
   })
 
-<<<<<<< HEAD
   .state('menu.home', {
     url: '/page1',
     views: {
@@ -30,8 +25,6 @@ angular.module('app.routes', [])
     }
   })
 
-=======
->>>>>>> 68b11f637427122f738b2b5cb2223691f394aa38
   .state('menu.judulBerita', {
     url: '/page2',
     views: {
