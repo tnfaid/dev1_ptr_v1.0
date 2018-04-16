@@ -9,10 +9,20 @@ angular.module('app.routes', [])
   $stateProvider
     
 
-      .state('petroMobile', {
+  .state('petroMobile', {
     url: '/page1',
     templateUrl: 'templates/petroMobile.html',
     controller: 'petroMobileCtrl'
+  })
+
+  .state('menu.home', {
+    url: '/page1',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/petroMobile.html',
+        controller: 'homeCtrl'
+      }
+    }
   })
 
   .state('menu.judulBerita', {

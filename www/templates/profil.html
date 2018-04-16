@@ -1,25 +1,163 @@
 <ion-view title="Profil" id="page5" style="background-color:#FDFDFD;">
-  <ion-nav-buttons side="left" class="has-header">
-    <button class="button button-icon icon ion-android-contact"></button>
-  </ion-nav-buttons>
-  <ion-content padding="true" class="has-header">
-    <a ui-sref="menu.maknaLogo()" id="profil-button25" class="button button-positive button-block">Makna Logo</a>
-    <a ui-sref="menu.sejarahPerusahaan()" id="profil-button26" class="button button-positive button-block">Sejarah Perusahaan</a>
-    <a ui-sref="menu.visiMisiDanBudayaPerusahaan()" id="profil-button27" class="button button-positive button-block">Visi Misi</a>
-    <a ui-sref="menu.kapasitasProduksi()" id="profil-button28" class="button button-positive button-block">Kapasitas Produksi</a>
-    <a ui-sref="menu.fasilitasInfrastruktur()" id="profil-button29" class="button button-positive button-block">Fasilitas Infrastruktur</a>
-    <a ui-sref="menu.manajemen()" id="profil-button30" class="button button-positive button-block">Manajemen</a>
-    <button id="profil-button31" class="button button-positive button-block">Struktur Organisasi</button>
-    <a ui-sref="menu.maknaLogo()" id="profil-button142" class="button button-positive button-block">Anak Perusahaan &amp; Usaha Patungan</a>
-    <a ui-sref="menu.sumberDayaManusia()" id="profil-button32" class="button button-positive button-block">Sumber Daya Manusia</a>
-    <a ui-sref="menu.lingkunganK3()" id="profil-button34" class="button button-positive button-block">Lingkungan K3</a>
-    <a ui-sref="menu.penghargaanPrestasi()" id="profil-button35" class="button button-positive button-block">Penghargaan &amp; Prestasi</a>
-    <a ui-sref="menu.komiteAudit()" id="profil-button36" class="button button-positive button-block">Komite Audit</a>
-    <a ui-sref="menu.komiteManajemenRisiko()" id="profil-button37" class="button button-positive button-block">Komite Manajemen Resiko</a>
-    <a ui-sref="menu.profesiPenunjang()" id="profil-button38" class="button button-positive button-block">Profesi Penunjang</a>
-    <button id="profil-button39" class="button button-positive button-block">Inovasi</button>
-    <button id="profil-button143" class="button button-positive button-block">Profil Perusahaan PDF</button>
-    <a ui-sref="menu.marsPetrokimiaGresik()" id="profil-button41" class="button button-positive button-block">Mars Petrokimia Gresik</a>
-    <a ui-sref="menu.videoProfilPerusahaan()" id="profil-button42" class="button button-positive button-block">Video Profil Perusahaan</a>
+
+<style type="text/css">
+    a{
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        font-family: fantasy;
+    }
+    .icon-menuProfil{
+        font-size: 40px;
+        color: #00b052;
+    }
+    .col-4{
+        margin-top: 6px;
+        margin-right: 10px;
+        margin-bottom: 22px;
+        border-bottom-style: hidden;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+    }
+    .item p {
+        color: #000;
+        font-size: 14px;
+        margin-top: 13px;
+        text-align: center;
+    }
+    
+
+</style>
+
+    <ion-nav-buttons side="left" class="has-header">
+        <button class="button button-icon icon ion-android-contact"></button>
+    </ion-nav-buttons>
+    <ion-content padding="true" class="has-header" offset-50>
+        <div class="row item-text-wrap text-center" >
+            <div class="item col col-4">
+                <a ui-sref="menu.maknaLogo()" id="profil-button25">
+                    <i class="icon ion-heart balanced icon-menuProfil"></i>
+                    <p class="text-menuProfil">Makna Logo</p>
+                </a>
+            </div>  
+            <div class="item col col-4">
+                <a ui-sref="menu.sejarahPerusahaan()" id="profil-button26">
+                    <i class="icon ion-ios-telephone assertive icon-menuProfil"></i>
+                    <p>Sejarah Perusahaan</p>
+                </a>
+            </div>  
+            <div class="item col col-4 ">
+                <a ui-sref="menu.visiMisiDanBudayaPerusahaan()" id="profil-button27">
+                    <i class="icon ion-android-contacts assertive icon-menuProfil"></i>
+                    <p>Visi Misi & Tata Nilai</p>
+                </a>
+            </div> 
+        </div>
+
+        <div class="row item-text-wrap text-center">   
+            <div class="item col col-4 ">
+                <a id="profil-button39">
+                    <i class="icon ion-android-contacts assertive icon-menuProfil"></i>
+                    <p>Inovasi</p>
+                </a>
+            </div> 
+            <div class="item col col-4">
+                <a ui-sref="menu.fasilitasInfrastruktur()" id="profil-button29">
+                    <i class="icon ion-ios-telephone assertive icon-menuProfil"></i>
+                    <p>Fasilitas Infrastruktur</p>
+                </a>
+            </div>  
+            <div class="item col col-4 ">
+                <a ui-sref="menu.manajemen()" id="profil-button30">
+                    <i class="icon ion-android-contacts assertive icon-menuProfil"></i>
+                    <p>Manajemen</p>
+                </a>
+            </div>  
+        </div>
+
+        <div class="row item-text-wrap text-center">
+            <div class="item col col-4">
+                <a ui-sref="menu.lingkunganK3()" id="profil-button34">
+                    <i class="icon ion-heart balanced icon-menuProfil"></i>
+                    <p >Lingkungan & K3</p>
+                </a>
+            </div>  
+            <div class="item col col-4">
+                <a ui-sref="menu.penghargaanPrestasi()" id="profil-button35">
+                    <i class="icon ion-ios-telephone assertive icon-menuProfil"></i>
+                    <p>Penghargaan & Prestasi</p>
+                </a>
+            </div>  
+            <div class="item col col-4 ">
+                <a ui-sref="menu.komiteAudit()" id="profil-button36">
+                    <i class="icon ion-android-contacts assertive icon-menuProfil"></i>
+                    <p>Komite Audit</p>
+                </a>
+            </div>  
+        </div>
+
+        <div class="row item-text-wrap text-center">
+            <div class="item col col-4">
+                <a id="profil-button31">
+                    <i class="icon ion-android-contacts balanced icon-menuProfil"></i>
+                    <p>Struktur Organisasi</p>
+                </a>
+            </div>
+            <div class="item col col-4">
+                <a ui-sref="menu.profesiPenunjang()" id="profil-button38">
+                    <i class="icon ion-ios-telephone assertive icon-menuProfil"></i>
+                    <p>Profesi Penunjang</p>
+                </a>
+            </div>
+            <div class="item col col-4">
+                <a ui-sref="menu.kapasitasProduksi()" id="profil-button28">
+                    <i class="icon ion-heart balanced icon-menuProfil"></i>
+                    <p>Kapasitas Produksi</p>
+                </a>
+            </div>  
+        </div>
+
+        <div class="row item-text-wrap text-center">
+            <div class="item col col-4">
+                <a ui-sref="menu.sumberDayaManusia()" id="profil-button32">
+                    <i class="icon ion-ios-telephone assertive icon-menuProfil"></i>
+                    <p>Sumber Daya Manusia</p>
+                </a>
+            </div>
+            <div class="item col col-4">
+                <a ui-sref="menu.komiteManajemenRisiko()" id="profil-button37">
+                    <i class="icon ion-heart balanced icon-menuProfil"></i>
+                    <p>Komite Manajemen Resiko</p>
+                </a>
+            </div>   
+            <div class="item col col-4 ">
+                <a id="profil-button142">
+                    <i class="icon ion-android-contacts assertive icon-menuProfil"></i>
+                    <p>Anak Perusahaan & Usaha Patungan</p>
+                </a>
+            </div>  
+        </div>  
+
+        <div class="row item-text-wrap text-center">
+            <div class="item col col-4">
+                <a id="profil-button143">
+                    <i class="icon ion-heart balanced icon-menuProfil"></i>
+                    <p>Profil Perusahaan PDF</p>
+                </a>
+            </div>  
+            <div class="item col col-4">
+                <a ui-sref="menu.marsPetrokimiaGresik()" id="profil-button41">
+                    <i class="icon ion-ios-telephone assertive icon-menuProfil"></i>
+                    <p>Mars Petrokimia Gresik</p>
+                </a>
+            </div>  
+            <div class="item col col-4 ">
+                <a ui-sref="menu.videoProfilPerusahaan()" id="profil-button42">
+                    <i class="icon ion-android-contacts assertive icon-menuProfil"></i>
+                    <p>Video Profil Perusahaan</p>
+                </a>
+            </div>  
+        </div>
   </ion-content>
 </ion-view>

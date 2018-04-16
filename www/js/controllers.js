@@ -1,16 +1,24 @@
 angular.module('app.controllers', [])
   
-.controller('petroMobileCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('petroMobileCtrl', ['$scope', '$stateParams',
+function ($scope, $stateParams) {
+	$scope.active = 'utama';
+	$scope.setActive = function(type) {
+	    $scope.active = type;
+	};
+  	$scope.isActive = function(type) {
+    	return type === $scope.active;
+	};
+
+}])
+
+.controller('homeCtrl', ['$scope', '$stateParams',
 function ($scope, $stateParams) {
 
 
 }])
    
-.controller('judulBeritaCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('judulBeritaCtrl', ['$scope', '$stateParams',
 function ($scope, $stateParams) {
 
 
