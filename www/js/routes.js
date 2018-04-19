@@ -769,6 +769,67 @@ angular.module('app.routes', [])
     }
   })
 
+  .state('menu.tanyaJawab1', {
+    url: '/page78',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/tanyaJawab1.html',
+        controller: 'tanyaJawab1Ctrl'
+      }
+    }
+  })
+
+  .state('menu.tanyaJawab2', {
+    url: '/page79',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/tanyaJawab2.html',
+        controller: 'tanyaJawab2Ctrl'
+      }
+    }
+  })
+
+  .state('menu.tanyaJawab3', {
+    url: '/page80',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/tanyaJawab3.html',
+        controller: 'tanyaJawab3Ctrl'
+      }
+    }
+  })
+
+.state('menu.tanyaJawab4', {
+    url: '/page81',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/tanyaJawab4.html',
+        controller: 'tanyaJawab4Ctrl'
+      }
+    }
+  })
+
+.state('menu.tanyaJawab5', {
+    url: '/page82',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/tanyaJawab5.html',
+        controller: 'tanyaJawab5Ctrl'
+      }
+    }
+  })
+
+.state('menu.tanyaJawab6', {
+    url: '/page83',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/tanyaJawab6.html',
+        controller: 'tanyaJawab6Ctrl'
+      }
+    }
+  })
+
+
 $urlRouterProvider.otherwise('/page1')
 
 

@@ -1,16 +1,99 @@
 <ion-view title="Tata Kelola" id="page6" style="background-color:#FDFDFD;">
+  <style type="text/css">
+    a{
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        font-family: fantasy;
+    }
+    .icon-menuProfil{
+        font-size: 40px;
+        color: #00b052;
+    }
+    .col-4{
+        margin-top: 6px;
+        margin-right: 10px;
+        margin-bottom: 22px;
+        border-bottom-style: hidden;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+    }
+    .item p {
+        color: #000;
+        font-size: 14px;
+        margin-top: 13px;
+        text-align: center;
+    }
+    
+
+</style>
+
   <ion-nav-buttons side="left" class="has-header">
-    <button class="button button-icon icon ion-navicon"></button>
-  </ion-nav-buttons>
-  <ion-content padding="true" class="has-header">
-    <button id="tataKelola-button43" class="button button-balanced button-block">Pedoman GCG</button>
-    <button id="tataKelola-button44" class="button button-balanced button-block">Pedoman WBS</button>
-    <button id="tataKelola-button45" class="button button-balanced button-block">Pedoman Etika Kerja &amp; Etika Bisnis</button>
-    <button id="tataKelola-button46" class="button button-balanced button-block">Pedoman Pengadaan Barang &amp; Jasa</button>
-    <button id="tataKelola-button47" class="button button-balanced button-block">Pedoman Kebijakan Dekom &amp; Direksi</button>
-    <button id="tataKelola-button48" class="button button-balanced button-block">Pedoman Kerja Komite Audit</button>
-    <button id="tataKelola-button49" class="button button-balanced button-block">Pedoman Kerja Komite Man. Risiko</button>
-    <button id="tataKelola-button50" class="button button-balanced button-block">Pedoman Pengendalian Gratifikasi</button>
-    <a ui-sref="menu.tanyaJawabGCG()" id="tataKelola-button51" class="button button-balanced button-block">Tanya Jawab GCG</a>
+        <button class="button button-icon icon ion-android-contact"></button>
+    </ion-nav-buttons>
+    <ion-content padding="true" class="has-header" offset-50>
+        <div class="row item-text-wrap text-center" >
+            <div class="item col col-4">
+                <a ui-sref="menu.pedomanGCG()" id="tataKelola-button43">
+                    <i class="icon ion-heart balanced icon-menuProfil"></i>
+                    <p class="text-menuProfil">Pedoman GCG</p>
+                </a>
+            </div>  
+            <div class="item col col-4">
+                <a ui-sref="menu.pedomanWBS()" id="tataKelola-button44">
+                    <i class="icon ion-ios-telephone assertive icon-menuProfil"></i>
+                    <p>Pedoman WBS</p>
+                </a>
+            </div>  
+            <div class="item col col-4 ">
+                <a ui-sref="menu.pedomanEtikaKerja()" id="tataKelola-button45">
+                    <i class="icon ion-android-contacts assertive icon-menuProfil"></i>
+                    <p>Pedoman Etika Kerja</p>
+                </a>
+            </div> 
+        </div>
+
+        <div class="row item-text-wrap text-center">   
+            <div class="item col col-4 ">
+                <a ui-sref="menu.pedomanPengadaanBarangJasa()" id="tataKelola-button46">
+                    <i class="icon ion-android-contacts assertive icon-menuProfil"></i>
+                    <p>Pedoman Pengadaan Barang dan Jasa</p>
+                </a>
+            </div> 
+            <div class="item col col-4">
+                <a ui-sref="menu.pedomanKebijakanDekomDireksi()" id="tataKelola-button47">
+                    <i class="icon ion-ios-telephone assertive icon-menuProfil"></i>
+                    <p>Pedoman Kerja Kebijakan Dekom dan Direksi</p>
+                </a>
+            </div>  
+            <div class="item col col-4 ">
+                <a ui-sref="menu.pedomanKomiteAudit()" id="tataKelola-button48">
+                    <i class="icon ion-android-contacts assertive icon-menuProfil"></i>
+                    <p>Pedoman Kerja Komite Audit</p>
+                </a>
+            </div>  
+        </div>
+
+        <div class="row item-text-wrap text-center">
+            <div class="item col col-4">
+                <a ui-sref="menu.pedomanKerjaKomiteManresiko()" id="tataKelola-button49">
+                    <i class="icon ion-heart balanced icon-menuProfil"></i>
+                    <p >Pedoman Kerja Komite Man.resiko</p>
+                </a>
+            </div>  
+            <div class="item col col-4">
+                <a ui-sref="menu.pedomanPengendalianGratifikasi()" id="tataKelola-button50">
+                    <i class="icon ion-ios-telephone assertive icon-menuProfil"></i>
+                    <p>Pedoman Pengendalian Greatifikasi</p>
+                </a>
+            </div>  
+            <div class="item col col-4 ">
+                <a ui-sref="menu.tanyaJawabGCG()" id="tataKelola-button51">
+                    <i class="icon ion-android-contacts assertive icon-menuProfil"></i>
+                    <p>Tanya Jawab GCG</p>
+                </a>
+            </div>  
+        </div>
   </ion-content>
 </ion-view>
