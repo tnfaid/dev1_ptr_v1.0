@@ -1,12 +1,66 @@
 <ion-view title="CSR" id="page8" style="background-color:#FDFDFD;">
-  <ion-nav-buttons side="left" class="has-header">
-    <button class="button button-icon icon ion-android-sync"></button>
-  </ion-nav-buttons>
-  <ion-content padding="true" class="has-header">
-    <a ui-sref="menu.binaLingkungan()" id="cSR-button13" class="button button-positive button-block">Bina Lingkungan</a>
-    <a ui-sref="menu.kemitraan()" id="cSR-button14" class="button button-positive button-block">Kemitraan</a>
-    <a ui-sref="menu.lolapil()" id="cSR-button15" class="button button-positive button-block">Loka Pelatihan Ketrampilan</a>
-    <button id="cSR-button16" class="button button-positive button-block">Warta KBL 2014</button>
-    <button id="cSR-button17" class="button button-positive button-block">Warta KBL 2016</button>
+<style type="text/css">
+    a{
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        font-family: fantasy;
+    }
+    .icon-menuProfil{
+        font-size: 40px;
+        color: #00b052;
+    }
+    .col-4{
+        margin-top: 6px;
+        margin-right: 10px;
+        margin-bottom: 22px;
+        border-bottom-style: hidden;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+    }
+    .item p {
+        color: #000;
+        font-size: 14px;
+        margin-top: 13px;
+        text-align: center;
+    }
+    
+
+</style>
+
+    <ion-nav-buttons side="left" class="has-header">
+        <button class="button button-icon icon ion-android-sync"></button>
+    </ion-nav-buttons>
+    <ion-content padding="true" class="has-header" offset-50>
+        <div class="row item-text-wrap text-center" >
+            <div class="item col col-4">
+                <a ui-sref="menu.binaLingkungan()" id="cSR-button13">
+                    <i class="icon ion-heart balanced icon-menuProfil"></i>
+                    <p class="text-menuProfil">Bina Lingkungan</p>
+                </a>
+            </div>  
+            <div class="item col col-4 ">
+                <a ui-sref="menu.lolapil()" id="cSR-button15">
+                    <i class="icon ion-android-contacts assertive icon-menuProfil"></i>
+                    <p>Lolapil</p>
+                </a>
+            </div> 
+        </div>
+
+        <div class="row item-text-wrap text-center">   
+            <div class="item col col-4 ">
+                <a ui-sref="menu.kemitraan()" id="cSR-button14"">
+                    <i class="icon ion-android-contacts assertive icon-menuProfil"></i>
+                    <p>Kemitraan</p>
+                </a>
+            </div> 
+            <div class="item col col-4 ">
+                <a id="cSR-button17">
+                    <i class="icon ion-android-contacts assertive icon-menuProfil"></i>
+                    <p>Warta KBL</p>
+                </a>
+            </div>  
+        </div>
   </ion-content>
 </ion-view>
