@@ -35,6 +35,16 @@ angular.module('app.routes', [])
     }
   })
 
+    .state('menu.bantuan', {
+    url: '/bantuan',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/bantuan.html',
+        controller: 'bantuanCtrl'
+      }
+    }
+  })
+
   .state('menu.pemasaran', {
     url: '/page3',
     views: {

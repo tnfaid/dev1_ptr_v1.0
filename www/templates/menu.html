@@ -10,7 +10,7 @@
   .text-icon{
     color: #00b052;
     font-weight: bold;
-    font-family: fantasy; 
+    font-family: inherit; 
   }
   .header-item .bar-header {
     top: 0;
@@ -55,23 +55,21 @@
     <ion-content padding="false" class="side-menu-right has-header">
       <ion-list id="menu-list1" >
         <ion-item class="item-icon-left balanced text-icon" id="menu-list-item1" ui-sref="menu.home()" menu-close="" >
-          <i class="icon"><img src="img/menu/home.png" style="width: 30px;height: 30px;"></i>Home
+          <i class="icon"><img src="img/menu/home1.png" style="width: 30px;height: 30px;"></i>Home
           <ion-option-button class="button-positive"></ion-option-button>
-        </ion-item>
-        <ion-item class="item-icon-left balanced text-icon" id="menu-list-item1" ui-sref="menu.berita()" menu-close="">
-          <i class="icon"><img src="img/menu/berita1.png" style="width: 30px;height: 30px;"></i>Berita
-          <ion-option-button class="button-positive"></ion-option-button>
-        </ion-item>
+       </ion-item>
         <ion-item class="item-icon-left balanced text-icon" id="menu-list-item2" ui-sref="menu.pemasaran()" menu-close="">
-          <i class="icon"><img src="img/menu/pemasaran.png" style="width: 35px;height: 35px;"></i>Pemasaran </ion-item>
+          <i class="icon"><img src="img/menu/pemasaran1.png" style="width: 35px;height: 35px;"></i>Pemasaran </ion-item>
+          <ion-item class="item-icon-left balanced text-icon" id="menu-list-item1" ui-sref="menu.berita()" menu-close="">
+          <i class="icon"><img src="img/menu/berita.png" style="width: 30px;height: 30px;"></i>Berita</ion-item>
         <ion-item class="item-icon-left balanced text-icon" id="menu-list-item3" ui-sref="menu.laporan()" menu-close="">
-          <i class="icon"><img src="img/menu/laporan.png" style="width: 32px;height: 32px;"></i>Laporan</ion-item>
+          <i class="icon"><img src="img/menu/laporan1.png" style="width: 32px;height: 32px;"></i>Laporan</ion-item>
+        <ion-item class="item-icon-left balanced text-icon" id="menu-list-item8" ui-sref="menu.tataKelola()" menu-close="">
+          <i class="icon"><img src="img/menu/tataKelola1.png" style="width: 35px;height: 35px;"></i>Tata Kelola</ion-item>
       </ion-list>
       <ion-list id="menu-list2">
         <ion-item class="item-icon-left balanced text-icon" id="menu-list-item7" ui-sref="menu.profil()" menu-close="">
-          <i class="icon"><img src="img/menu/profil.png" style="width: 32px;height: 32px;"></i>Profil</ion-item>
-        <ion-item class="item-icon-left balanced text-icon" id="menu-list-item8" ui-sref="menu.tataKelola()" menu-close="">
-          <i class="icon"><img src="img/menu/tataKelola.png" style="width: 35px;height: 35px;"></i>Tata Kelola</ion-item>
+          <i class="icon"><img src="img/menu/profil1.png" style="width: 32px;height: 32px;"></i>Profil</ion-item>
         <ion-item class="item-icon-left balanced text-icon" id="menu-list-item9" ui-sref="menu.infoProduk()" menu-close="">
           <i class="icon"><img src="img/menu/produk.png" style="width: 33px;height: 33px;"></i>Info Produk</ion-item>
       </ion-list>
@@ -80,8 +78,9 @@
           <i class="icon"><img src="img/menu/csr.png" style="width: 35px;height: 35px;"></i>CSR</ion-item>
         <ion-item class="item-icon-left balanced text-icon" id="menu-list-item11" ui-sref="menu.tautan()" menu-close="">
           <i class="icon"><img src="img/menu/tautan.png" style="width: 35px;height: 35px;"></i>Tautan</ion-item>
-        <ion-item class="item-icon-left balanced text-icon" id="menu-list-item12" ui-sref="menu.fAQs()" menu-close="">
-          <i class="icon"><img src="img/menu/bantuan.png" style="width: 35px;height: 35px;"></i>Bantuan</ion-item>
+       <!-- <ion-item class="item-icon-left balanced text-icon" id="menu-list-item12" ui-sref="menu.fAQs()" menu-close="">-->
+        <ion-item class="item-icon-left balanced text-icon" id="bantuan" ui-sref="menu.bantuan()" menu-close="">
+          <i class="icon"><img src="img/menu/help.png" style="width: 35px;height: 35px;"></i>Bantuan</ion-item>
       </ion-list>
     </ion-content>
   </ion-side-menu>
