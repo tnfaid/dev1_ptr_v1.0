@@ -839,6 +839,85 @@ angular.module('app.routes', [])
     }
   })
 
+.state('menu.pedomanWBS', {
+    url: '/page84',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/pedomanWBS.html',
+        controller: 'pedomanWBSCtrl'
+      }
+    }
+  })
+
+.state('menu.pedomanGCG', {
+    url: '/page85',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/pedomanGCG.html',
+        controller: 'pedomanGCGCtrl'
+      }
+    }
+  })
+
+.state('menu.pedomanEtikaKerja', {
+    url: '/page86',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/pedomanEtikaKerja.html',
+        controller: 'pedomanEtikaKerjaCtrl'
+      }
+    }
+  })
+
+.state('menu.pedomanPengadaanBarangJasa', {
+    url: '/page87',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/pedomanPengadaanBarangJasa.html',
+        controller: 'pedomanPengadaanBarangJasaCtrl'
+      }
+    }
+  })
+
+.state('menu.pedomanKebijakanDekomDireksi', {
+    url: '/page88',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/pedomanKebijakanDekomDireksi.html',
+        controller: 'pedomanKebijakanDekomDireksiCtrl'
+      }
+    }
+  })
+
+.state('menu.pedomanKomiteAudit', {
+    url: '/page89',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/pedomanKomiteAudit.html',
+        controller: 'pedomanKomiteAuditCtrl'
+      }
+    }
+  })
+
+.state('menu.pedomanKerjaKomiteManresiko', {
+    url: '/page90',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/pedomanKerjaKomiteManresiko.html',
+        controller: 'pedomanKerjaKomiteManresikoCtrl'
+      }
+    }
+  })
+
+.state('menu.pedomanPengendalianGratifikasi', {
+    url: '/page91',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/pedomanPengendalianGratifikasi.html',
+        controller: 'pedomanPengendalianGratifikasiCtrl'
+      }
+    }
+  })
 
 $urlRouterProvider.otherwise('/page1')
 
