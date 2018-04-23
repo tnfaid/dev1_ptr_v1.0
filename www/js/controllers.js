@@ -25,8 +25,13 @@ function ($scope, $stateParams) {
 
 
 }])
+
+.controller('bantuanCtrl', ['$scope', '$stateParams',
+function ($scope, $stateParams) {
+
+
+}])
    
-.controller('pemasaranCtrl', ['$scope', '$stateParams',
 function ($scope, $stateParams) {
 
 var acc = document.getElementsByClassName("accordion");
@@ -50,9 +55,7 @@ for (i = 0; i < acc.length; i++) {
 
 }])
    
-.controller('laporanCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
+.controller('laporanCtrl', ['$scope', '$stateParams',
 function ($scope, $stateParams) {
 
 
@@ -431,6 +434,22 @@ function ($scope, $stateParams) {
 
 
 }])
+
+.controller('pedomanWBSCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+// You can include any angular dependencies as parameters for this function
+// TIP: Access Route Parameters for your page via $stateParams.parameterName
+function ($scope, $stateParams) {
+
+
+}])
+
+.controller('pedomanGCGCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+// You can include any angular dependencies as parameters for this function
+// TIP: Access Route Parameters for your page via $stateParams.parameterName
+function ($scope, $stateParams) {
+
+
+}])
    
 .controller('ureaZACtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
@@ -639,9 +658,7 @@ function ($scope, $stateParams) {
 
 
 }])
-   
-.controller('wartaKBLCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
+ You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams) {
 
