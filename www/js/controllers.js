@@ -1,7 +1,7 @@
 angular.module('app.controllers', [])
   
 .controller('petroMobileCtrl', ['$scope', '$stateParams',
-function ($scope, $stateParams) {
+function ($scope, $stateParams,  $ionicSideMenuDelegate) {
 	$scope.active = 'utama';
 	$scope.setActive = function(type) {
 	    $scope.active = type;
@@ -9,6 +9,10 @@ function ($scope, $stateParams) {
   	$scope.isActive = function(type) {
     	return type === $scope.active;
 	};
+
+	$scope.toggleLeftSideMenu = function() {
+      $ionicSideMenuDelegate.toggleLeft();
+   };
 
 }])
 
