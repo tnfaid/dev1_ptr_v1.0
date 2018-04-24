@@ -1,3 +1,4 @@
+ 
 <ion-view title="Laporan" id="page4" style="background-color:#FDFDFD;">
 <!--================================================ CSS =============================================== -->
   <style type="text/css">
@@ -14,29 +15,32 @@
       height: 128px;
       width: 108px;
     }
-    .buttonDownload{
+    .item.buttonDownload{
       font-family: fantasy;
       border-color: #00b052;
       border-width: 3px;
       background-color: #fff;
+      padding: 5px;
     }
     .card {
       padding-top: 1px;
       padding-bottom: 1px;
-
-      border-color: #00b052;
-      border-left: 3px solid #00b052;
-      border-right: 3px solid #00b052;
-      border-top: 3px solid #00b052;
-      border-bottom: 3px solid #00b052;
+      font-size: 20px;
+      text-align: center;
+      box-shadow: 0 3px 3px rgb(9, 95, 25);
     }
     .row{
       padding-top: 5px;
       padding-left: 0px;
     }
-    .item-divider{
-      border-bottom: 3px solid #00b052;
-    }
+    .item-divider {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    min-height: 30px;
+    background-color: #dfd5d5;
+    color: #222;
+    font-weight: 500;
+}
   </style>
 <!--============================================= END CSS ============================================== -->
 
@@ -57,16 +61,16 @@
    </label>
 
    <div class="row item-text-wrap text-center" >
-      <div class="item col col-4">
+      <div class="item col col-4" style="margin-right: 10px;">
         <div class = "card list">
-          <div class = "item item-divider">
+          <div class = "item item-divider " >
             Laporan Tahunan
           </div>
           <div class = "item item-text-wrap">
             <img src="img/paper.jpg">
           </div>
         </div>
-        <div class = "item item-divider buttonDownload">
+        <div class = "item buttonDownload ">
           Download
         </div>
       </div>  
@@ -79,39 +83,10 @@
             <img src="img/paper.jpg">
           </div>
         </div>
-        <div class = "item item-divider buttonDownload">
+        <div class = "item buttonDownload">
           Download
         </div>
       </div> 
   </div>
-  <div class="row item-text-wrap text-center" >
-      <div class="item col col-4">
-        <div class = "card list">
-          <div class = "item item-divider">
-            Laporan Tahunan
-          </div>
-          <div class = "item item-text-wrap">
-            <img src="img/paper.jpg">
-          </div>
-        </div>
-        <div class = "item item-divider buttonDownload">
-          Download
-        </div>
-      </div>  
-      <div class="item col col-4">
-        <div class = "card list ">
-          <div class = "item item-divider">
-            Laporan Keberlanjutan
-          </div>
-          <div class = "item item-text-wrap">
-            <img src="img/paper.jpg">
-          </div>
-        </div>
-        <div class = "item item-divider buttonDownload">
-          Download
-        </div>
-      </div> 
-  </div>
-  
   </ion-content>
 </ion-view>
