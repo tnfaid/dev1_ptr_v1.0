@@ -1,13 +1,92 @@
+ 
 <ion-view title="Laporan" id="page4" style="background-color:#FDFDFD;">
+<!--================================================ CSS =============================================== -->
+  <style type="text/css">
+    .selectTahun{
+      border-color: #00b052;
+      color: #000;
+      font-weight: bold;
+      font-family: fantasy;
+    }
+    .col-4{
+      border-style: none;
+    }
+    img{
+      height: 128px;
+      width: 108px;
+    }
+    .item.buttonDownload{
+      font-family: fantasy;
+      border-color: #00b052;
+      border-width: 3px;
+      background-color: #fff;
+      padding: 5px;
+    }
+    .card {
+      padding-top: 1px;
+      padding-bottom: 1px;
+      font-size: 20px;
+      text-align: center;
+      box-shadow: 0 3px 3px rgb(9, 95, 25);
+    }
+    .row{
+      padding-top: 5px;
+      padding-left: 0px;
+    }
+    .item-divider {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    min-height: 30px;
+    background-color: #dfd5d5;
+    color: #222;
+    font-weight: 500;
+}
+  </style>
+<!--============================================= END CSS ============================================== -->
+
   <ion-nav-buttons side="left" class="has-header">
     <button class="button button-icon icon ion-android-document"></button>
   </ion-nav-buttons>
   <ion-content padding="true" class="has-header">
-    <form id="laporan-form2" class="list">
-      <label class="item item-input" id="laporan-search1">
-        <i class="icon ion-search placeholder-icon"></i>
-        <input type="search" placeholder="">
-      </label>
-    </form>
+    <label class = "item item-input item-select selectTahun">
+      <div class = "input-label ">
+         Pilih Tahun
+      </div>
+    
+      <select>
+        <option>2016</option>
+        <option>2015</option>
+        <option>2014</option>
+      </select>
+   </label>
+
+   <div class="row item-text-wrap text-center" >
+      <div class="item col col-4" style="margin-right: 10px;">
+        <div class = "card list">
+          <div class = "item item-divider " >
+            Laporan Tahunan
+          </div>
+          <div class = "item item-text-wrap">
+            <img src="img/paper.jpg">
+          </div>
+        </div>
+        <div class = "item buttonDownload ">
+          Download
+        </div>
+      </div>  
+      <div class="item col col-4">
+        <div class = "card list ">
+          <div class = "item item-divider">
+            Laporan Keberlanjutan
+          </div>
+          <div class = "item item-text-wrap">
+            <img src="img/paper.jpg">
+          </div>
+        </div>
+        <div class = "item buttonDownload">
+          Download
+        </div>
+      </div> 
+  </div>
   </ion-content>
 </ion-view>

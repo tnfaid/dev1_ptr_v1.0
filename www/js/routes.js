@@ -9,10 +9,20 @@ angular.module('app.routes', [])
   $stateProvider
     
 
-      .state('petroMobile', {
+  .state('petroMobile', {
     url: '/page1',
     templateUrl: 'templates/petroMobile.html',
     controller: 'petroMobileCtrl'
+  })
+
+  .state('menu.home', {
+    url: '/page1',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/petroMobile.html',
+        controller: 'homeCtrl'
+      }
+    }
   })
 
   .state('menu.judulBerita', {
@@ -21,6 +31,16 @@ angular.module('app.routes', [])
       'side-menu21': {
         templateUrl: 'templates/judulBerita.html',
         controller: 'judulBeritaCtrl'
+      }
+    }
+  })
+
+    .state('menu.bantuan', {
+    url: '/bantuan',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/bantuan.html',
+        controller: 'bantuanCtrl'
       }
     }
   })
@@ -755,6 +775,146 @@ angular.module('app.routes', [])
       'side-menu21': {
         templateUrl: 'templates/lolapil.html',
         controller: 'lolapilCtrl'
+      }
+    }
+  })
+
+  .state('menu.tanyaJawab1', {
+    url: '/page78',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/tanyaJawab1.html',
+        controller: 'tanyaJawab1Ctrl'
+      }
+    }
+  })
+
+  .state('menu.tanyaJawab2', {
+    url: '/page79',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/tanyaJawab2.html',
+        controller: 'tanyaJawab2Ctrl'
+      }
+    }
+  })
+
+  .state('menu.tanyaJawab3', {
+    url: '/page80',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/tanyaJawab3.html',
+        controller: 'tanyaJawab3Ctrl'
+      }
+    }
+  })
+
+.state('menu.tanyaJawab4', {
+    url: '/page81',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/tanyaJawab4.html',
+        controller: 'tanyaJawab4Ctrl'
+      }
+    }
+  })
+
+.state('menu.tanyaJawab5', {
+    url: '/page82',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/tanyaJawab5.html',
+        controller: 'tanyaJawab5Ctrl'
+      }
+    }
+  })
+
+.state('menu.tanyaJawab6', {
+    url: '/page83',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/tanyaJawab6.html',
+        controller: 'tanyaJawab6Ctrl'
+      }
+    }
+  })
+
+.state('menu.pedomanWBS', {
+    url: '/page84',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/pedomanWBS.html',
+        controller: 'pedomanWBSCtrl'
+      }
+    }
+  })
+
+.state('menu.pedomanGCG', {
+    url: '/page85',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/pedomanGCG.html',
+        controller: 'pedomanGCGCtrl'
+      }
+    }
+  })
+
+.state('menu.pedomanEtikaKerja', {
+    url: '/page86',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/pedomanEtikaKerja.html',
+        controller: 'pedomanEtikaKerjaCtrl'
+      }
+    }
+  })
+
+.state('menu.pedomanPengadaanBarangJasa', {
+    url: '/page87',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/pedomanPengadaanBarangJasa.html',
+        controller: 'pedomanPengadaanBarangJasaCtrl'
+      }
+    }
+  })
+
+.state('menu.pedomanKebijakanDekomDireksi', {
+    url: '/page88',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/pedomanKebijakanDekomDireksi.html',
+        controller: 'pedomanKebijakanDekomDireksiCtrl'
+      }
+    }
+  })
+
+.state('menu.pedomanKomiteAudit', {
+    url: '/page89',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/pedomanKomiteAudit.html',
+        controller: 'pedomanKomiteAuditCtrl'
+      }
+    }
+  })
+
+.state('menu.pedomanKerjaKomiteManresiko', {
+    url: '/page90',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/pedomanKerjaKomiteManresiko.html',
+        controller: 'pedomanKerjaKomiteManresikoCtrl'
+      }
+    }
+  })
+
+.state('menu.pedomanPengendalianGratifikasi', {
+    url: '/page91',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/pedomanPengendalianGratifikasi.html',
+        controller: 'pedomanPengendalianGratifikasiCtrl'
       }
     }
   })

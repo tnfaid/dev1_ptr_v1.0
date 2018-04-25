@@ -1,43 +1,86 @@
 <ion-side-menus enable-menu-with-back-views="true">
-  <ion-side-menu-content>
+
+<style type="text/css">
+  i{
+    color: #00b052;
+  }
+  a[href]:hover {
+    cursor: pointer;
+  }
+  .text-icon{
+    color: #00b052;
+    font-weight: bold;
+    font-family: inherit; 
+  }
+  .header-item .bar-header {
+    top: 0;
+    border-top-width: 0;
+    border-bottom-width: 1px;
+    background-color: #000;
+  }
+  ion-header-bar .bar-stable{
+    background-color: #000;
+  }
+  .bar-stable .button.button-clear {
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+    color: #fff;
+    font-size: 17px;
+  }
+  .bar-stable .button {
+    border-color: #b2b2b2;
+    background-color: #f8f8f8;
+    color: #fff;
+  }
+  .bar-stable .button:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+</style>
+
+  <ion-side-menu-content >
     <ion-nav-bar class="bar-stable">
       <ion-nav-back-button></ion-nav-back-button>
-      <ion-nav-buttons side="right">
+      <ion-nav-buttons side="right" style="background-color: #fff;">
         <button class="button button-icon button-clear ion-navicon" menu-toggle="right"></button>
       </ion-nav-buttons>
     </ion-nav-bar>
     <ion-nav-view name="side-menu21"></ion-nav-view>
   </ion-side-menu-content>
   <ion-side-menu side="right" id="side-menu21">
-    <ion-header-bar class="bar-stable">
-      <div class="title">Menu</div>
+    <ion-header-bar class="bar-stable" style="background-color: #1b5e20;">
+      <div class="title" style="color: #fff; font-weight: bold; font-size: 18px; text-align: center;">Menu</div>
     </ion-header-bar>
-    <ion-content padding="false" class="side-menu-right has-header ">
-      <ion-list id="menu-list1">
-        <ion-item class="item-icon-left balanced" id="menu-list-item1" ui-sref="menu.berita()" menu-close="">
-          <i class="icon ion-ios-paper"></i>Berita
+    <ion-content padding="false" class="side-menu-right has-header">
+      <ion-list id="menu-list1" >
+        <ion-item class="item-icon-left balanced text-icon" id="menu-list-item1" ui-sref="menu.home()" menu-close="" >
+          <i class="icon"><img src="img/menu/home1.png" style="width: 30px;height: 30px;"></i>Home
           <ion-option-button class="button-positive"></ion-option-button>
-        </ion-item>
-        <ion-item class="item-icon-left balanced" id="menu-list-item2" ui-sref="menu.pemasaran()" menu-close="">
-          <i class="icon ion-android-cart"></i>Pemasaran </ion-item>
-        <ion-item class="item-icon-left balanced" id="menu-list-item3" ui-sref="menu.laporan()" menu-close="">
-          <i class="icon ion-android-document"></i>Laporan</ion-item>
+       </ion-item>
+        <ion-item class="item-icon-left balanced text-icon" id="menu-list-item2" ui-sref="menu.pemasaran()" menu-close="">
+          <i class="icon"><img src="img/menu/pemasaran1.png" style="width: 35px;height: 35px;"></i>Pemasaran </ion-item>
+          <ion-item class="item-icon-left balanced text-icon" id="menu-list-item1" ui-sref="menu.berita()" menu-close="">
+          <i class="icon"><img src="img/menu/berita.png" style="width: 30px;height: 30px;"></i>Berita</ion-item>
+        <ion-item class="item-icon-left balanced text-icon" id="menu-list-item3" ui-sref="menu.laporan()" menu-close="">
+          <i class="icon"><img src="img/menu/laporan1.png" style="width: 32px;height: 32px;"></i>Laporan</ion-item>
+        <ion-item class="item-icon-left balanced text-icon" id="menu-list-item8" ui-sref="menu.tataKelola()" menu-close="">
+          <i class="icon"><img src="img/menu/tataKelola1.png" style="width: 35px;height: 35px;"></i>Tata Kelola</ion-item>
       </ion-list>
       <ion-list id="menu-list2">
-        <ion-item class="item-icon-left balanced" id="menu-list-item7" ui-sref="menu.profil()" menu-close="">
-          <i class="icon ion-android-contact"></i>Profil</ion-item>
-        <ion-item class="item-icon-left balanced" id="menu-list-item8" ui-sref="menu.tataKelola()" menu-close="">
-          <i class="icon ion-navicon"></i>Tata Kelola</ion-item>
-        <ion-item class="item-icon-left balanced" id="menu-list-item9" ui-sref="menu.infoProduk()" menu-close="">
-          <i class="icon ion-ios-barcode"></i>Produk</ion-item>
+        <ion-item class="item-icon-left balanced text-icon" id="menu-list-item7" ui-sref="menu.profil()" menu-close="">
+          <i class="icon"><img src="img/menu/profil1.png" style="width: 32px;height: 32px;"></i>Profil</ion-item>
+        <ion-item class="item-icon-left balanced text-icon" id="menu-list-item9" ui-sref="menu.infoProduk()" menu-close="">
+          <i class="icon"><img src="img/menu/produk.png" style="width: 33px;height: 33px;"></i>Info Produk</ion-item>
       </ion-list>
       <ion-list id="menu-list3">
-        <ion-item class="item-icon-left balanced" id="menu-list-item10" ui-sref="menu.cSR()" menu-close="">
-          <i class="icon ion-android-sync"></i>CSR</ion-item>
-        <ion-item class="item-icon-left balanced" id="menu-list-item11" ui-sref="menu.tautan()" menu-close="">
-          <i class="icon ion-share"></i>Tautan</ion-item>
-        <ion-item class="item-icon-left balanced" id="menu-list-item12" ui-sref="menu.fAQs()" menu-close="">
-          <i class="icon ion-help"></i>FAQs</ion-item>
+        <ion-item class="item-icon-left balanced text-icon" id="menu-list-item10" ui-sref="menu.cSR()" menu-close="">
+          <i class="icon"><img src="img/menu/csr.png" style="width: 35px;height: 35px;"></i>CSR</ion-item>
+        <ion-item class="item-icon-left balanced text-icon" id="menu-list-item11" ui-sref="menu.tautan()" menu-close="">
+          <i class="icon"><img src="img/menu/tautan.png" style="width: 35px;height: 35px;"></i>Tautan</ion-item>
+       <!-- <ion-item class="item-icon-left balanced text-icon" id="menu-list-item12" ui-sref="menu.fAQs()" menu-close="">-->
+        <ion-item class="item-icon-left balanced text-icon" id="bantuan" ui-sref="menu.bantuan()" menu-close="">
+          <i class="icon"><img src="img/menu/help.png" style="width: 35px;height: 35px;"></i>Bantuan</ion-item>
       </ion-list>
     </ion-content>
   </ion-side-menu>
