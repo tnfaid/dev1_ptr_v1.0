@@ -22,9 +22,19 @@
     }
     .item p {
         color: #000;
-        font-size: 14px;
         margin-top: 1px;
         text-align: center;
+    }
+    .card.profil{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 2px;
+        padding-right: 2px;
+        margin-bottom: 10px;
+    }
+    h4.textIcon{
+        padding-left: 5px;
+        padding-right: 5px;
     }
     
 
@@ -36,44 +46,71 @@
     <ion-content padding="true" class="has-header" offset-50>
         <div class="row item-text-wrap text-center" >
             <div class="item col col-4">
-                <a ui-sref="menu.maknaLogo()" id="profil-button25">
-                    <i class="icon"><img src="img/profil/makna.png" style="width: 50px;height: 50px;"></i>
-                    <p>Makna Logo</p>
-                </a>
+                <div class="card profil">
+                    <a ui-sref="menu.maknaLogo()" id="profil-button25">
+                        <i class="icon"><img src="img/profil/makna.png" style="width: 50px;height: 50px;margin-bottom: 5px;"></i>
+                            <div class="container">
+                                <h4 class="textIcon"><b>Makna Logo</b></h4>
+                            </div>
+                    </a>
+                </div> 
             </div>  
+            <div class="item col col-4 " >
+                <div class="card profil">
+                    <a ui-sref="menu.sejarahPerusahaan()" id="profil-button26">
+                        <i class="icon"><img src="img/profil/pabrik.png" style="width: 50px;height: 50px;margin-bottom: 5px;"></i>
+                            <div class="container">
+                                <h4 class="textIcon"><b>Sejarah Perusahaan</b></h4>
+                            </div>
+                    </a>
+                </div> 
+            </div>   
+        </div>
+        <div class="row item-text-wrap text-center" style="margin-top: -47px;">
             <div class="item col col-4">
-                <a ui-sref="menu.sejarahPerusahaan()" id="profil-button26">
-                    <i class="icon"><img src="img/profil/pabrik.png" style="width: 50px;height: 50px;"></i>
-                    <p >Sejarah Perusahaan</p>
-                </a>
-            </div>
-            <div class="item col col-4">
-                <a id="profil-button143">
-                    <i class="icon"><img src="img/profil/profil.png" style="width: 50px;height: 50px;"></i>
-                    <p>Profil Perusahaan PDF</p>
-                </a>
-            </div>    
+                <div class="card profil">
+                    <a id="profil-button39">
+                        <i class="icon"><img src="img/profil/inovasi.png" style="width: 50px;height: 50px; margin-bottom: 5px;"></i>
+                            <div class="container">
+                                <h4 class="textIcon"><b>Inovasi</b></h4>
+                            </div>
+                    </a>
+                </div> 
+            </div>  
+            <div class="item col col-4" >
+                <div class="card profil">
+                    <a ui-sref="menu.visiMisiDanBudayaPerusahaan()" id="profil-button27">
+                        <i class="icon"><img src="img/profil/visimisi.png" style="width: 50px;height: 50px;margin-bottom: 5px;"></i>
+                            <div class="container ">
+                                <h4 class="textIcon"><b>Visi Misi & Tata Nilai</b></h4>
+                            </div>
+                    </a>
+                </div> 
+            </div> 
         </div>
 
-        <div class="row item-text-wrap text-center">
-            <div class="item col col-4 ">
-                <a ui-sref="menu.visiMisiDanBudayaPerusahaan()" id="profil-button27">
-                    <i class="icon"><img src="img/profil/visimisi.png" style="width: 50px;height: 50px;"></i>
-                    <p>Visi Misi & Tata Nilai</p>
-                </a>
-            </div>    
-            <div class="item col col-4 ">
-                <a id="profil-button39">
-                    <i class="icon"><img src="img/profil/inovasi.png" style="width: 50px;height: 50px;"></i>
-                    <p>Inovasi</p>
-                </a>
-            </div> 
-            <div class="item col col-4">
-                <a ui-sref="menu.fasilitasInfrastruktur()" id="profil-button29">
-                    <i class="icon"><img src="img/profil/infrastruktur.png" style="width: 50px;height: 50px;"></i>
-                    <p>Fasilitas Infrastruktur</p>
-                </a>
+
+        <div class="row item-text-wrap text-center" style="margin-top: -47px;">
+        <div class="item col col-4">
+                <div class="card profil">
+                    <a id="profil-button143">
+                        <i class="icon"><img src="img/profil/profil.png" style="width: 50px;height: 50px;margin-bottom: 5px;"></i>
+                            <div class="container">
+                                <h4 class="textIcon"><b>Profil Perusahaan PDF</b></h4>
+                            </div>
+                    </a>
+                </div> 
             </div>  
+            <div class="item col col-4" >
+                <div class="card profil">
+                    <a ui-sref="menu.fasilitasInfrastruktur()" id="profil-button29">
+                        <i class="icon"><img src="img/profil/infrastruktur.png" style="width: 50px;height: 50px;margin-bottom: 5px;"></i>
+                            <div class="container ">
+                                <h4 class="textIcon"><b>Fasilitas Infrastruktur</b></h4>
+                            </div>
+                    </a>
+                </div> 
+            </div>
         </div>
 
         <div class="row item-text-wrap text-center">
