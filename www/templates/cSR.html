@@ -25,7 +25,13 @@
         margin-top: 13px;
         text-align: center;
     }
-    
+    .card{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 2px;
+        padding-right: 2px;
+        margin-bottom: 10px;
+    } 
 
 </style>
 
@@ -33,33 +39,49 @@
         <button class="button button-icon icon ion-android-sync"></button>
     </ion-nav-buttons>
     <ion-content padding="true" class="has-header" offset-50>
-        <div class="row item-text-wrap text-center" >
+        <div class="row item-text-wrap text-center cardCsr" >
             <div class="item col col-4">
-                <a ui-sref="menu.binaLingkungan()" id="cSR-button13">
-                    <i class="icon ion-heart balanced icon-menuProfil"></i>
-                    <p class="text-menuProfil">Bina Lingkungan</p>
-                </a>
+                <div class="card">
+                    <a ui-sref="menu.binaLingkungan()" id="cSR-button13">
+                        <i class="icon"><img src="img/csr/binaLingkungan.png" style="width: 50px;height: 50px;"></i>
+                            <div class="container">
+                                <h4><b>Bina Lingkungan</b></h4>
+                            </div>
+                    </a>
+                </div> 
             </div>  
-            <div class="item col col-4 ">
-                <a ui-sref="menu.lolapil()" id="cSR-button15">
-                    <i class="icon ion-android-contacts assertive icon-menuProfil"></i>
-                    <p>Lolapil</p>
-                </a>
+            <div class="item col col-4 " >
+                <div class="card">
+                     <a ui-sref="menu.lolapil()" id="cSR-button15">
+                        <i class="icon"><img src="img/csr/lolapil.png" style="width: 50px;height: 50px;"></i>
+                            <div class="container">
+                                <h4><b>Lolapil</b></h4>
+                            </div>
+                    </a>
+                </div> 
             </div> 
         </div>
 
-        <div class="row item-text-wrap text-center">   
+        <div class="row item-text-wrap text-center cardCsr" style="margin-top: -45px;">   
             <div class="item col col-4 ">
-                <a ui-sref="menu.kemitraan()" id="cSR-button14"">
-                    <i class="icon ion-android-contacts assertive icon-menuProfil"></i>
-                    <p>Kemitraan</p>
-                </a>
+                <div class="card">
+                    <a ui-sref="menu.kemitraan()" id="cSR-button14"">
+                        <i class="icon"><img src="img/csr/mitra.png" style="width: 50px;height: 50px;"></i>
+                            <div class="container">
+                                <h4><b>Kemitraan</b></h4>
+                            </div>
+                    </a>
+                </div>
             </div> 
             <div class="item col col-4 ">
-                <a id="cSR-button17">
-                    <i class="icon ion-android-contacts assertive icon-menuProfil"></i>
-                    <p>Warta KBL</p>
-                </a>
+                <div class="card">
+                    <a id="cSR-button17">
+                        <i class="icon"><img src="img/csr/warta.png" style="width: 50px;height: 50px;"></i>
+                            <div class="container">
+                                <h4><b>Warta KBL</b></h4>
+                            </div>
+                    </a>
+                </div>
             </div>  
         </div>
   </ion-content>

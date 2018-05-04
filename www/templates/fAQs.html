@@ -3,82 +3,270 @@
 <style type="text/css">
    /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #fff;
+    color: #000;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     text-align: left;
-    border: none;
+    border-right: none;
     outline: none;
     transition: 0.4s;
-    
+
 }
 .accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
-    color: #777;
+    color: #000;
     float: right;
     margin-left: 5px;
 }
 
 .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
+    color: #fff;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: #43a047;
+    color: #fff;
+    font-weight: bold;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;
-    background-color: white;
+    /*background-color: #f1f8e9;hijau muda*/
+    background-color: #f1f8e9;
     display: none;
     overflow: hidden;
 } 
+p.textFaqs{
+  text-align: justify;
+}
+.item.listFaqs {
+  white-space: unset;
+    border-color: #ddd;
+    /*background-color: #eceff1;abu" muda*/
+    background-color: #f1f8e9;
+    color: #000;
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: -1px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.item-icon-left {
+    padding-left: 50px;
+}
+
 </style>
 
   <ion-nav-buttons side="left" class="has-header">
     <button class="button button-icon icon ion-help"></button>
   </ion-nav-buttons>
   <ion-content padding="true" class="has-header">
+    <button class="accordion">Apa yang diproduksi oleh PT Petrokimia Gresik ?</button>
+    <div class="panel">
+
+        <!-- PRODUK PUPUK -->
+        <button class="accordion">Produk Pupuk<i class="icon"></i></button>
+        <div class="panel">
+          <p class="textFaqs">
+            <div class = "list" >
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                Urea
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                ZA
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                SP-36
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                NPK Phonska
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                NPK Kebomas
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                ZK
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                KCl
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                Petroganik
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                 Petro Bio Fertil
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                Petronik
+             </div>
+            </div>
+          </p>
+        </div>
+        <!-- PRODUK BAHAN KIMIA LAINNYA -->
+        <button class="accordion">Produk Bahan Kimia Lainnya<i class="icon"></i></button>
+        <div class="panel">
+          <p class="textFaqs">
+            <div class = "list" >
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                Amoniak
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                Asam Sulfat
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                Asam Fosfat
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                Aluminium Fluorida
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                Purified Gypsum
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                Crude Gypsum
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                Granul Gypsum
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                Cement Retarder
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                Nitrogen
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                Oksigen
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                Karbondioksida cair
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                Dry ice
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                Kapur Pertanian
+             </div>
+             <div class = "item item-icon-left listFaqs">
+                <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+                Petrogladiator
+             </div>
+            </div>
+          </p>
+        </div>
+        <!-- PELAYANAN JASA -->
+        <button class="accordion">Pelayanan Jasa</button>
+        <div class="panel">
+          <p class="textFaqs">
+            Studi kelayakan & konsultasi, rancang bangun & perekayasaan, fabrikasi & konstruksi, pengoperasian & pemeliharaan pabrik, analisa mekanik & elektronik, komputerisasi, pendidikan & latihan, pemeriksaan teknik & korosi, penyediaan tenaga ahli, jasa fasilitas & utilitas.
+          </p>
+        </div>
+        </div>
     
-    <button class="accordion">Produk Bahan Kimia Lainnya<i class="icon"></i></button>
+    
+
+
+
+    <button class="accordion">Syarat Menjadi Distributor PT Petrokimia Gresik</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p class="textFaqs text-wrap">
+        <div class = "list" >
+         <div class = "item item-icon-left listFaqs">
+            <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+            Berbadan Hukum
+         </div>
+         <div class = "item item-icon-left listFaqs">
+            <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+            Akte Pendirian Perusahaan
+         </div>
+         <div class = "item item-icon-left listFaqs">
+            <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+            Tanda Daftar Perusahaan (TDP)
+         </div>
+         <div class = "item item-icon-left listFaqs">
+            <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+            Surat Ijin Usaha Perdagangan (Perdagangan Umum)
+         </div>
+         <div class = "item item-icon-left listFaqs">
+            <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+            Nomor Pokok Wajib Pajak (NPWP)
+         </div>
+         <div class = "item item-icon-left listFaqs">
+            <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+            Tanda daftar  gudang dan sarana transportasi (fotocopy STNK)
+         </div>
+         <div class = "item item-icon-left listFaqs">
+            <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+            Memiliki kantor dan pengurus aktif
+         </div>
+         <div class = "item item-icon-left listFaqs">
+            <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+            Memiliki minimal 2 (dua) kios resmi
+         </div>
+         <div class = "item item-icon-left listFaqs">
+            <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+            Memiliki modal kurang lebih Rp 2 miliar (Bank Garansi)
+         </div>
+         <div class = "item item-icon-left listFaqs">
+            <i class = "icon ion-android-checkmark-circle" style="font-size: 18px;"></i>
+            Rekomendasi Disperindag setempat 
+         </div>
+        </div>
+      </p>
     </div>
 
-    <button class="accordion">Pelayanan Jasa</button>
+    <button class="accordion">Syarat Menjadi Kios Resmi Pupuk Bersubsidi Produk PT Petrokimia Gresik</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
-    </div>
-
-    <button class="accordion">Cara Menjadi Distributor</button>
-    <div class="panel">
-      <p>Lorem ipsum...</p>
-    </div>
-
-    <button class="accordion">Syarat Menjadi Kios Resmi</button>
-    <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p class="textFaqs">Lorem ipsum...</p>
     </div>
 
     <button class="accordion">Cara Mendapatkan Pupuk Bersubsidi</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p class="textFaqs">Lorem ipsum...</p>
     </div>
 
     <button class="accordion">Cara Mendapatkan Pupuk NPK Kebomas</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p class="textFaqs">Lorem ipsum...</p>
     </div>
 
-    <button class="accordion">Cara Membedakan Pupuk SP-36 Asli dan Palsu</button>
+    <button class="accordion ">Cara Membedakan Pupuk SP-36 Asli dan Palsu</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p class="textFaqs">Lorem ipsum...</p>
     </div>   
     
   </ion-content>
 </ion-view>
+
