@@ -1,3 +1,12 @@
+## How to run for the first
+1. Install [Node.js](https://nodejs.org/en/)
+2. Pastikan Path nya si node js sudah ada di environment variable
+3. install cordova dan ionic
+```
+npm install -g cordova ionic
+```
+4. run program ionic serve -l
+
 ## Project 1 PetroApp mobile version
 ```
 1. tampilan home belum bisa side bar  - titik
